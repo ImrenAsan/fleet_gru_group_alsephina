@@ -54,16 +54,23 @@ public class VehicleCosts_StepDefs {
        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(15));
        wait.until(ExpectedConditions.titleIs("Vehicle Costs - Entities - System - Car - Entities - System"));
 
-        List<String> actualColumns = new ArrayList<>();
+      List<String> actualColumns = new ArrayList<>();
 
         for (WebElement eachColumn : vehicleCostsPage.allTopColumns) {
             actualColumns.add(eachColumn.getText());
-            
         }
-
         Assert.assertEquals(expectedColumns,actualColumns);
-
-
     }
+
+    @When("user logs in as store manager with correct credentials")
+    public void user_logs_in_as_store_manager_with_correct_credentials() {
+       loginPage.login("storemanager");
+    }
+
+    @When("user logs in as sales manager with correct credentials")
+    public void user_logs_in_as_sales_manager_with_correct_credentials() {
+        loginPage.login("salesmanager");
+    }
+
 
 }

@@ -19,7 +19,7 @@ Feature: Manage filter functionality on the Vehicle Costs page
 
   @AC01_TC02
   Scenario: Store manager should see 3 columns on the Vehicle Model page.
-    When user logs in as "store manager" with correct credentials
+    When user logs in as store manager with correct credentials
     And user hovers over Fleet module and clicks the Vehicle Costs
     Then user should be able to see following columns
       | TYPE        |
@@ -28,7 +28,7 @@ Feature: Manage filter functionality on the Vehicle Costs page
 
   @AC01_TC03
   Scenario: Sales manager should see 3 columns on the Vehicle Model page.
-    When user logs in as "sales manager" with correct credentials
+    When user logs in as sales manager with correct credentials
     And user hovers over Fleet module and clicks the Vehicle Costs
     Then user should be able to see following columns
       | TYPE        |
@@ -37,21 +37,21 @@ Feature: Manage filter functionality on the Vehicle Costs page
 
   @AC02_TC01
   Scenario: Driver check the first checkbox to check all the Vehicle Costs
-    When user logs in as "driver" with correct credentials
+    When user logs in as driver with correct credentials
     And user hovers over Fleet module and clicks the Vehicle Costs
     And user clicks the first checkbox
     Then user should select all the Vehicle Costs
 
   @AC02_TC02
   Scenario: Store manager check the first checkbox to check all the Vehicle Costs
-    When user logs in as "store manager" with correct credentials
+    When user logs in as store manager with correct credentials
     And user hovers over Fleet module and clicks the Vehicle Costs
     And user clicks the first checkbox
     Then user should select all the Vehicle Costs
 
   @AC02_TC03
-  Scenario: Sales manage rcheck the first checkbox to check all the Vehicle Costs
-    When user logs in as "sales manager" with correct credentials
+  Scenario: Sales manage check the first checkbox to check all the Vehicle Costs
+    When user logs in as sales manager with correct credentials
     And user hovers over Fleet module and clicks the Vehicle Costs
     And user clicks the first checkbox
     Then user should select all the Vehicle Costs
