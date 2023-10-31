@@ -14,5 +14,9 @@ public class MainPage extends BasePage {
     @FindBy(linkText = "Learn how to use this space")
     public WebElement learnHowToUseThisSpace;
 
-
+    @FindBy(xpath = "//span[@class='title title-level-1'][normalize-space(.)='Marketing']")
+    public WebElement marketingButton;
+    @FindBy(xpath = "//a[@href='/campaign/']/span")
+    public WebElement campaignsButton;
+   
 }
