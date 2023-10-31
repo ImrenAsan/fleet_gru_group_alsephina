@@ -9,12 +9,12 @@ Feature: Manage filter functionality on the Vehicle Costs page
 
   @AC01_TC01
   Scenario: Driver should see 3 columns on the Vehicle Model page.
-    When user logs in as "driver" with correct credentials
+    When user logs in as driver with correct credentials
     And user hovers over Fleet module and clicks the Vehicle Costs
     Then user should be able to see following columns
-      | TYPE       |
-      | TOTAL PRICE|
-      | DATE       |
+      | Type        |
+      | Total Price |
+      | Date        |
 
 
   @AC01_TC02
@@ -22,18 +22,18 @@ Feature: Manage filter functionality on the Vehicle Costs page
     When user logs in as "store manager" with correct credentials
     And user hovers over Fleet module and clicks the Vehicle Costs
     Then user should be able to see following columns
-      | TYPE       |
-      | TOTAL PRICE|
-      | DATE       |
+      | Type        |
+      | Total Price |
+      | Date        |
 
   @AC01_TC03
   Scenario: Sales manager should see 3 columns on the Vehicle Model page.
     When user logs in as "sales manager" with correct credentials
     And user hovers over Fleet module and clicks the Vehicle Costs
     Then user should be able to see following columns
-      | TYPE       |
-      | TOTAL PRICE|
-      | DATE       |
+      | Type        |
+      | Total Price |
+      | Date        |
 
   @AC02_TC01
   Scenario: Driver check the first checkbox to check all the Vehicle Costs
