@@ -35,21 +35,15 @@ Feature: Manage filter functionality on the Vehicle Costs page
       | TOTAL PRICE |
       | DATE        |
 
-  @AC02_TC01
-  Scenario: Driver check the first checkbox to check all the Vehicle Costs
-    When user logs in as driver with correct credentials
-    And user hovers over Fleet module and clicks the Vehicle Costs
-    And user clicks the first checkbox
-    Then user should select all the Vehicle Costs
 
-  @AC02_TC02
+  @AC02_TC01
   Scenario: Store manager check the first checkbox to check all the Vehicle Costs
     When user logs in as store manager with correct credentials
     And user hovers over Fleet module and clicks the Vehicle Costs
     And user clicks the first checkbox
     Then user should select all the Vehicle Costs
 
-  @AC02_TC03
+  @AC02_TC02
   Scenario: Sales manage check the first checkbox to check all the Vehicle Costs
     When user logs in as sales manager with correct credentials
     And user hovers over Fleet module and clicks the Vehicle Costs

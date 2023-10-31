@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/fleet/step_definitions",
         dryRun = false,
-        tags = "@US1",
+        tags = "@seren",
         publish = true
 
 )

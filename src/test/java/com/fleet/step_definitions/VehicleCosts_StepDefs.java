@@ -72,5 +72,19 @@ public class VehicleCosts_StepDefs {
         loginPage.login("salesmanager");
     }
 
+    @When("user clicks the first checkbox")
+    public void user_clicks_the_first_checkbox() {
+        BrowserUtils.sleep(3);
+        vehicleCostsPage.firstCheckbox.click();
+    }
+    @Then("user should select all the Vehicle Costs")
+    public void user_should_select_all_the_vehicle_costs() {
+
+        for (WebElement eachCheckBox : vehicleCostsPage.allCheckButtons) {
+            Assert.assertTrue(eachCheckBox.isSelected());
+        }
+
+
+    }
 
 }
