@@ -8,5 +8,5 @@ import java.util.List;
 public class VehicleCostsPage extends BasePage{
 
     @FindBy(css = ".grid-header-cell__label")
-    public List<WebElement> actualColumns;
+    public List<WebElement> allTopColumns;
 }
