@@ -33,12 +33,12 @@ public class LoginPage extends BasePage {
                 password = ConfigurationReader.getProperty("driver.password");
                 break;
             case "storemanager":
-                userName = ConfigurationReader.getProperty("sales.managerusername");
-                password = ConfigurationReader.getProperty("sales.managerpassword");
-                break;
-            case "salesmanager":
                 userName = ConfigurationReader.getProperty("store.managerusername");
                 password = ConfigurationReader.getProperty("store.managerpassword");
+                break;
+            case "salesmanager":
+                userName = ConfigurationReader.getProperty("sales.managerusername");
+                password = ConfigurationReader.getProperty("sales.managerpassword");
                 break;
             default:
                 System.out.println("Invalid user type");
