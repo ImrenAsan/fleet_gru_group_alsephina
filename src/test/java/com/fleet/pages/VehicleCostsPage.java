@@ -13,6 +13,6 @@ public class VehicleCostsPage extends BasePage{
     @FindBy(xpath = "//button[@class='btn btn-default btn-small dropdown-toggle']/input")
     public WebElement firstCheckbox;
 
-    @FindBy(xpath = "//td[@class='select-row-cell renderable grid-cell grid-body-cell grid-body-cell-massAction']")
+    @FindBy(xpath = "//input[@tabindex='-1']")
     public List<WebElement> allCheckButtons;
 }

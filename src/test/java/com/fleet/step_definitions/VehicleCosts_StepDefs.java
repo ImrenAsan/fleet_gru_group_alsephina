@@ -6,6 +6,7 @@ import com.fleet.pages.VehicleCostsPage;
 import com.fleet.utilities.BrowserUtils;
 import com.fleet.utilities.ConfigurationReader;
 import com.fleet.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -37,13 +38,15 @@ public class VehicleCosts_StepDefs {
 
     @When("user hovers over Fleet module and clicks the Vehicle Costs")
     public void user_hovers_over_fleet_module_and_clicks_the_vehicle_costs() {
+/*
+        Actions action = new Actions(Driver.getDriver());
+        action.moveToElement(mainPage.fleetButton).perform();
+*/
+        mainPage.hoverOver("fleet");
+
+       // mainPage.fleetButton.click();
 
         BrowserUtils.sleep(2);
-        /*Actions action = new Actions(Driver.getDriver());
-        action.moveToElement(mainPage.fleetButton);*/
-
-        mainPage.fleetButton.click();
-
         mainPage.vehicleCostsButton.click();
 
     }
@@ -72,13 +75,9 @@ public class VehicleCosts_StepDefs {
         loginPage.login("salesmanager");
     }
 
-    @When("user clicks the first checkbox")
-    public void user_clicks_the_first_checkbox() {
-        BrowserUtils.sleep(3);
-        vehicleCostsPage.firstCheckbox.click();
-    }
     @Then("user should select all the Vehicle Costs")
     public void user_should_select_all_the_vehicle_costs() {
+        BrowserUtils.sleep(3);
 
         for (WebElement eachCheckBox : vehicleCostsPage.allCheckButtons) {
             Assert.assertTrue(eachCheckBox.isSelected());
@@ -87,4 +86,12 @@ public class VehicleCosts_StepDefs {
 
     }
 
+    @And("user clicks the first checkbox")
+    public void userClicksTheFirstCheckbox() {
+
+        //  BrowserUtils.sleep(5);
+        WebDriverWait wait= new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(vehicleCostsPage.firstCheckbox));
+        vehicleCostsPage.firstCheckbox.click();
+    }
 }
