@@ -1,23 +1,17 @@
 package com.fleet.step_definitions;
 
-import com.fleet.pages.LoginPage;
+
 import com.fleet.pages.MainPage;
 import com.fleet.pages.MarketingPage;
-import com.fleet.utilities.BrowserUtils;
-import com.fleet.utilities.ConfigurationReader;
 import com.fleet.utilities.Driver;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class UserStory14_StepDefs {
 
