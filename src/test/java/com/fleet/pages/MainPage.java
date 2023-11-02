@@ -39,6 +39,13 @@ public class MainPage extends BasePage {
     public WebElement vehicleCostsButton;
 
 
+    @FindBy(xpath = "//span[.='Vehicles']")
+    public WebElement Veichle;
+
+    @FindBy(xpath = "//a[.='...']")
+    public WebElement EditCarIcon;
+
+
     @FindBy(xpath= "//span[normalize-space()='Vehicles Model']")
     public WebElement vehicleModelPageLink;
 
