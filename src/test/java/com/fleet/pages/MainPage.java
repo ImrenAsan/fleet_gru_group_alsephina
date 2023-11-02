@@ -38,10 +38,15 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "//span[.='Vehicle Costs']")
     public WebElement vehicleCostsButton;
 
+
     @FindBy(xpath= "//span[normalize-space()='Vehicles Model']")
     public WebElement vehicleModelPageLink;
 
 
+
+
+    @FindBy(xpath = "//li[@data-route='oro_campaign_index']/a/span")
+    public WebElement campaignsButton;
 
 
 

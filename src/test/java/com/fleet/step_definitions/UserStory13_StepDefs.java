@@ -12,7 +12,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -20,7 +19,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VehicleCosts_StepDefs {
+public class UserStory13_StepDefs {
 
     MainPage mainPage = new MainPage();
     LoginPage loginPage = new LoginPage();
@@ -43,8 +42,6 @@ public class VehicleCosts_StepDefs {
         action.moveToElement(mainPage.fleetButton).perform();
 */
         mainPage.hoverOver("fleet");
-
-       // mainPage.fleetButton.click();
 
         BrowserUtils.sleep(2);
         mainPage.vehicleCostsButton.click();
