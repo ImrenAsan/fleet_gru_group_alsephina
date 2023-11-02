@@ -45,7 +45,7 @@ public class UserStory5_StepDefs {
     @Then("user should be able to see columns below on the page")
     public void userShouldBeAbleToSeeColumnsBelowOnThePage(List<String> expectedColumns) {
 
-        BrowserUtils.sleep(3);
+        BrowserUtils.sleep(10);
 
         List<String> actualColumns = new ArrayList<>();
 
@@ -54,7 +54,11 @@ public class UserStory5_StepDefs {
             actualColumns.add(eachColumn.getText());
         }
 
+        System.out.println("expectedColumns.size() = " + expectedColumns.size());
+
+        System.out.println("actualColumns.size() = " + actualColumns.size());
         Assert.assertEquals(expectedColumns, actualColumns);
+
 
 
     }

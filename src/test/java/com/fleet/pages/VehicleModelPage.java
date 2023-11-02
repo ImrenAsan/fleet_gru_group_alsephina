@@ -8,7 +8,7 @@ import java.util.List;
 public class VehicleModelPage extends BasePage {
 
     //   //span[normalize-space()='Vehicles Model']
-    @FindBy(xpath = "//table[@class='grid table-hover table table-bordered table-condensed']//tr[@class='grid-header-row']")
+    @FindBy(xpath = "//thead[@class='grid-header']//span[@class='grid-header-cell__label']")
     public List<WebElement> allColumnsInVehicleModel;
 
     @FindBy(xpath = "//div[normalize-space()='You do not have permission to perform this action.']")
