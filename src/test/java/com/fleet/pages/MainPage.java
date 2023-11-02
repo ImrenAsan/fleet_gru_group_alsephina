@@ -54,7 +54,8 @@ public class MainPage extends BasePage {
 
     @FindBy(xpath = "//li[@data-route='oro_campaign_index']/a/span")
     public WebElement campaignsButton;
-
+    @FindBy(xpath = "//span[.='Calendar Events']")
+    public WebElement calenderEventsButton;
 
 
     public void hoverOver(String moduleName){
