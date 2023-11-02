@@ -38,6 +38,10 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "//span[.='Vehicle Costs']")
     public WebElement vehicleCostsButton;
 
+    @FindBy(xpath = "//li[@data-route='oro_campaign_index']/a/span")
+    public WebElement campaignsButton;
+
+
     public void hoverOver(String moduleName){
 
         Actions action = new Actions(Driver.getDriver());
