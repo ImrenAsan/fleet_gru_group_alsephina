@@ -26,5 +26,11 @@ public class ActivitiesPage extends BasePage {
     @FindBy(xpath = "(//span[normalize-space()='This value should not be blank.'])[2]")
     public WebElement emptyFieldErrorMessage;
 
+    @FindBy(xpath = "(//span[normalize-space()='The value have not to be less than 1.'])[3]")
+    public WebElement lessThan1ErrorMessage;
+
+    @FindBy(xpath = "(//span[normalize-space()='The value have not to be more than 99.'])[3]")
+    public WebElement moreThan99ErrorMessage;
+
 
 }
