@@ -1,5 +1,5 @@
-@US6
-Feature: As a user, I want to see edit car info icons from the Vehicle page.
+@US7
+Feature: As a user, I should be able to select any vehicle from the Vehicle page
 
   Background: User logs in
     Given Users is on the login page
@@ -7,7 +7,7 @@ Feature: As a user, I want to see edit car info icons from the Vehicle page.
   Scenario Outline: User logs in as different User Types
     Given  the users logged in as "<userType>"
     And the user hovers Fleet and clicks on veichle
-    Then the user should see edit car info icon
+    Then user selects any veichle checkbox
 
 
     Examples:
@@ -15,4 +15,3 @@ Feature: As a user, I want to see edit car info icons from the Vehicle page.
       | driver       |
       | storemanager |
       | salesmanager |
-

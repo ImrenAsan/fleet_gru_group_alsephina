@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         dryRun = false,
 
 
-        tags = "@ali",
+        tags = "@US7",
 
         publish = true
 
