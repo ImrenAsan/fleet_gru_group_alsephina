@@ -2,8 +2,8 @@ package com.fleet.step_definitions;
 
 import com.fleet.utilities.Driver;
 import io.cucumber.java.Scenario;
-import org.junit.After;
-import org.junit.Before;
+import io.cucumber.java.Before;
+import io.cucumber.java.After;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
