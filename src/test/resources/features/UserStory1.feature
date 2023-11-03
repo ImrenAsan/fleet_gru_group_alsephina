@@ -1,11 +1,11 @@
-@US1
+@B30G1-152
 Feature:As a user, I should be accessing all the main modules of the app
 
   Background: User is already in the login page
     Given Users is on the login page
 
-  @AC1
-  Scenario Outline:
+  @B30G1-150
+  Scenario Outline: Store and sales managers should view 8 module names.
     When the users logged in as "<userType>"
     Then the users see on the "<pageSubtitle>" page
     And user is as "<userType>" user should see following options
@@ -24,8 +24,8 @@ Feature:As a user, I should be accessing all the main modules of the app
       | storemanager | Dashboard    |
       | salesmanager | Dashboard    |
 
-  @AC2
-  Scenario Outline:
+  @B30G1-151
+  Scenario Outline: Drivers should view 4 module names
     When the users logged in as "<userType>"
     Then the users see on the "<pageSubtitle>" page
     And user is as "<userType>" user should see following options
