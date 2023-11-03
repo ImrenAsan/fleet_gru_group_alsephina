@@ -10,14 +10,15 @@ import org.junit.runner.RunWith;
         plugin = {
                 "html:target/cucumber-reports",
                 "rerun:target/rerun.txt",
-                "me.jvt.cucumber.report.PrettyReports:target/cucumber"
+                "me.jvt.cucumber.report.PrettyReports:target/cucumber",
+                "json:target/cucumber.json"
         },
         features = "src/test/resources/features",
         glue = "com/fleet/step_definitions",
         dryRun = false,
 
 
-        tags = "@US7",
+        tags = "",
 
         publish = true
 
