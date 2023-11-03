@@ -18,9 +18,6 @@ public class UserStory9_StepDefs {
     LoginPage loginPage = new LoginPage();
 
     ActivitiesPage activitiesPage = new ActivitiesPage();
-    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(30));
-
-
     @When("user enters a number less than 1")
     public void userEntersANumberLessThan1() {
         activitiesPage.repeatEveryInput.sendKeys("-1");
@@ -28,12 +25,7 @@ public class UserStory9_StepDefs {
     }
 
     @Then("user should see \"The value have not to be less than 1.\"")
-    public void user_should_see() {
-      /*  String expectedMessage = "The value have not to be less than 1.";
-        String actualMessage = activitiesPage.invalidValueMessage.getText();
-        Assert.assertEquals(expectedMessage,actualMessage);
-
-       */
+    public void user_should_see_less_than_1_message() {
 
         BrowserUtils.sleep(10);
         Assert.assertTrue(activitiesPage.lessThan1ErrorMessage.isDisplayed());
@@ -46,12 +38,7 @@ public class UserStory9_StepDefs {
     }
 
     @Then("user should see \"The value have not to be more than 99.\"")
-    public void userShouldSee() {
-      /*  String expectedMessage = "The value have not to be more than 99.";
-        String actualMessage = activitiesPage.invalidValueMessage.getText();
-        Assert.assertEquals(expectedMessage,actualMessage);
-
-       */
+    public void userShouldSeeMoreThan99Message() {
 
         BrowserUtils.sleep(10);
         Assert.assertTrue(activitiesPage.moreThan99ErrorMessage.isDisplayed());
