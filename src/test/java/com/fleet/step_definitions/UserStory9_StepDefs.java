@@ -14,9 +14,6 @@ import java.time.Duration;
 
 public class UserStory9_StepDefs {
 
-    MainPage mainPage = new MainPage();
-    LoginPage loginPage = new LoginPage();
-
     ActivitiesPage activitiesPage = new ActivitiesPage();
     @When("user enters a number less than 1")
     public void userEntersANumberLessThan1() {

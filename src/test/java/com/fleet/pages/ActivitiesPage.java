@@ -7,14 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ActivitiesPage extends BasePage {
 
-    public ActivitiesPage() {
-
-        PageFactory.initElements(Driver.getDriver(), this);
-
-    }
-    // @FindBy(xpath = "//div[@class='pull-right title-buttons-container']")
-
-    @FindBy(xpath = "//a[normalize-space(text())='Create Calendar event']")
+    @FindBy(xpath = "//a[normalize-space()='Create Calendar event']")
     public WebElement createCalenderEventButton;
 
     @FindBy(xpath = "(//input[@type='checkbox'])[2]")

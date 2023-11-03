@@ -12,8 +12,6 @@ import java.time.Duration;
 
 public class UserStory10_StepDefs {
 
-    MainPage mainPage = new MainPage();
-    LoginPage loginPage = new LoginPage();
 
     ActivitiesPage activitiesPage = new ActivitiesPage();
     @Then("user should be able to write message in the Description field")
