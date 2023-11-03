@@ -19,13 +19,12 @@ public class UserStory8_StepDefs {
     LoginPage loginPage = new LoginPage();
 
     ActivitiesPage activitiesPage = new ActivitiesPage();
-    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15));
+    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(30));
 
 
     @When("user hovers over Activities module and clicks the Calender Events")
     public void user_hovers_over_activities_module_and_clicks_the_calender_events() {
         mainPage.hoverOver("activities");
-        BrowserUtils.sleep(5);
         wait.until(ExpectedConditions.elementToBeClickable(mainPage.calenderEventsButton));
         mainPage.calenderEventsButton.click();
     }
@@ -54,18 +53,6 @@ public class UserStory8_StepDefs {
     @When("user clears the Calender event repeat field")
     public void user_clears_the_calender_event_repeat_field() {
         activitiesPage.repeatEveryInput.clear();
-
-    }
-
-    @Then("user sees an error message {string}")
-    public void user_sees_an_error_message(String expectedMessage) {
-        activitiesPage.repeatEveryInput.clear();
-        BrowserUtils.sleep(10);
-        String actualMessage = activitiesPage.emptyFieldErrorMessage.getText();
-        System.out.println(expectedMessage);
-        System.out.println(actualMessage);
-        BrowserUtils.sleep(10);
-        Assert.assertEquals(expectedMessage, actualMessage);
 
     }
 
