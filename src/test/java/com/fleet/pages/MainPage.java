@@ -53,9 +53,6 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "//li[@data-route='oro_campaign_index']/a/span")
     public WebElement campaignsButton;
 
-    @FindBy(xpath = "//th[@class='select-all-header-cell renderable grid-cell grid-header-cell grid-header-cell-massAction']//input[@type='checkbox']")
-    public WebElement allCheckboxes;
-
     @FindBy(xpath = "(//td/input[@type='checkbox'])[2]")
     public WebElement checkBoxAnyVeichle;
 
