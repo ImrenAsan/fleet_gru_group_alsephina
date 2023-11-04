@@ -62,6 +62,26 @@ public class MainPage extends BasePage {
     public WebElement calenderEventsButton;
 
 
+    @FindBy(xpath = "//h3[.='How To Use Pinbar']")
+    public WebElement howToUsePinbar;
+
+
+    @FindBy(xpath = "//p[normalize-space()='Use pin icon on the right top corner of page to create fast access link in the pinbar.']")
+    public WebElement pinIcon;
+
+
+    @FindBy(xpath = "//img[@src='/bundles/oronavigation/images/pinbar-location.jpg']")
+    public WebElement pinbarImage;
+
+
+    @FindBy(xpath = "//span[.='Vehicle Contracts']")
+    public WebElement vehicleContractsPageLink ;
+
+
+
+    ////span[.='Vehicle Contracts']
+
+
 
     public void hoverOver(String moduleName){
 
