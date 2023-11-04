@@ -1,4 +1,4 @@
-@ali
+@US6
 Feature: As a user, I want to see edit car info icons from the Vehicle page.
 
   Background: User logs in
