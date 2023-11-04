@@ -16,7 +16,6 @@ import java.time.Duration;
 public class UserStory8_StepDefs {
 
     MainPage mainPage = new MainPage();
-    LoginPage loginPage = new LoginPage();
 
     ActivitiesPage activitiesPage = new ActivitiesPage();
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(30));

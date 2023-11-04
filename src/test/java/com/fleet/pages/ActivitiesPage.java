@@ -7,14 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ActivitiesPage extends BasePage {
 
-    public ActivitiesPage() {
-
-        PageFactory.initElements(Driver.getDriver(), this);
-
-    }
-   // @FindBy(xpath = "//div[@class='pull-right title-buttons-container']")
-
-    @FindBy(xpath = "//a[normalize-space(text())='Create Calendar event']")
+    @FindBy(xpath = "//a[normalize-space()='Create Calendar event']")
     public WebElement createCalenderEventButton;
 
     @FindBy(xpath = "(//input[@type='checkbox'])[2]")
@@ -31,6 +24,13 @@ public class ActivitiesPage extends BasePage {
 
     @FindBy(xpath = "(//span[normalize-space()='The value have not to be more than 99.'])[3]")
     public WebElement moreThan99ErrorMessage;
+
+    @FindBy(xpath = "//*[@id=\"tinymce\"]/p")
+    public WebElement textArea;
+
+    @FindBy(xpath = "//iframe[contains(@id,'oro_calendar_event_form_description')]")
+    //input[contains(@id,'Email')]
+    public WebElement iFrame;
 
 
 }
