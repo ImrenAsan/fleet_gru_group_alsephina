@@ -77,6 +77,12 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "//span[.='Vehicle Contracts']")
     public WebElement vehicleContractsPageLink ;
 
+    @FindBy(xpath = "//th[@class='select-all-header-cell renderable grid-cell grid-header-cell grid-header-cell-massAction']//input[@type='checkbox']")
+    public WebElement allCheckboxes;
+
+    @FindBy(xpath = "(//td/input[@type='checkbox'])[2]")
+    public WebElement checkBoxAnyVeichle;
+
 
 
     ////span[.='Vehicle Contracts']
