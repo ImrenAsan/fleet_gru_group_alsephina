@@ -1,5 +1,4 @@
-@yasin3
-@US_3
+@B30G1-171
 Feature: learn how to use the pinbar.
 
   Agile Story: As a user, I want to learn how to use the pinbar.
@@ -7,7 +6,7 @@ Feature: learn how to use the pinbar.
   Background:
     Given user is on the login page
 
-  @AC01
+  @B30G1-169
   Scenario Outline:
     When the users logged in as "<userType>"
     And  the users click on the learn how to use space link
@@ -23,7 +22,7 @@ Feature: learn how to use the pinbar.
 
 
 
-  @AC02
+  @B30G1-170
   Scenario Outline:
     When the users logged in as "<userType>"
     And  the users click on the learn how to use space link
