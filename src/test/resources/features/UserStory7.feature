@@ -1,10 +1,10 @@
-@US7
+@B30G1-175
 Feature: As a user, I should be able to select any vehicle from the Vehicle page
 
   Background: User logs in
     Given Users is on the login page
 
-  @US7_AC1
+  @B30G1-166
 
   Scenario Outline: User logs in as different User Types
     Given  the users logged in as "<userType>"
@@ -13,11 +13,10 @@ Feature: As a user, I should be able to select any vehicle from the Vehicle page
 
     Examples:
       | userType     |
-      | driver       |
       | storemanager |
       | salesmanager |
 
-  @US7_AC2
+  @B30G1-167
 
   Scenario Outline: User logs in as different User Types
     Given  the users logged in as "<userType>"
@@ -27,11 +26,10 @@ Feature: As a user, I should be able to select any vehicle from the Vehicle page
 
     Examples:
       | userType     |
-      | driver       |
       | storemanager |
       | salesmanager |
 
-  @US7_AC3
+  @B30G1-168
   Scenario Outline: User logs in as different User Types
     Given  the users logged in as "<userType>"
     When the user hovers Fleet and clicks on veichle
@@ -40,7 +38,6 @@ Feature: As a user, I should be able to select any vehicle from the Vehicle page
 
     Examples:
       | userType     |
-      | driver       |
       | storemanager |
       | salesmanager |
 
