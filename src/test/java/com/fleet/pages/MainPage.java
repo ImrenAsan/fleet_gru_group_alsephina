@@ -14,7 +14,7 @@ public class MainPage extends BasePage {
     @FindBy(className = "fa-question-circle")
     public WebElement questionMark;
 
-    @FindBy(linkText = "Learn how to use this space")
+    @FindBy(partialLinkText = "Learn how to use this space")
     public WebElement learnHowToUseThisSpace;
 
     @FindBy(xpath = "//span[@class='title title-level-1'][normalize-space(.)='Fleet']")
