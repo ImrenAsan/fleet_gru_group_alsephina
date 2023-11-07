@@ -1,13 +1,14 @@
-@US9
+@B30G1-162
 Feature: Error messages for invalid integers into the repeat Every input
 
   User Story:
   As a user, I should see error messages when I enter an invalid integer into the calender repeat day input box
 
   Background: User is already in the login page
+    #@B30G1-138
     Given user is on the login page
 
-  @US9_AC1_TC1
+  @B30G1-158
   Scenario Outline: Users should see error message for entering integer less than 1
     When the users logged in as "<userType>"
     And user hovers over Activities module and clicks the Calender Events
@@ -24,7 +25,7 @@ Feature: Error messages for invalid integers into the repeat Every input
       | storemanager |
       | salesmanager |
 
-  @US9_AC1_TC2
+  @B30G1-159
   Scenario Outline: Users should see error message for entering integer more than 99
     When the users logged in as "<userType>"
     And user hovers over Activities module and clicks the Calender Events

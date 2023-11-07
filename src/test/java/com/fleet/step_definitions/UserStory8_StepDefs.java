@@ -57,7 +57,6 @@ public class UserStory8_StepDefs {
 
     @Then("user sees an error message")
     public void userSeesAnErrorMessage() {
-        activitiesPage.repeatEveryInput.clear();
         BrowserUtils.sleep(10);
         Assert.assertTrue(activitiesPage.emptyFieldErrorMessage.isDisplayed());
     }
