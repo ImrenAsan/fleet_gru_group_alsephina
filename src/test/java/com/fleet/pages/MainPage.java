@@ -83,6 +83,9 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "(//td/input[@type='checkbox'])[2]")
     public WebElement checkBoxAnyVeichle;
 
+    @FindBy(xpath = "(//a[@title='View'])[1]")
+    public WebElement ViewEditDeleteIcons;
+
 
 
     ////span[.='Vehicle Contracts']

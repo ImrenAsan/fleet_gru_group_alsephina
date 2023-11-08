@@ -6,8 +6,8 @@ import com.fleet.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.interactions.Actions;
 
-import java.util.concurrent.TimeUnit;
 
 public class UserStory6_Stepdef {
     MainPage mainPage = new MainPage();
@@ -27,7 +27,10 @@ public class UserStory6_Stepdef {
     public void the_user_should_see_edit_car_info_icon() {
         BrowserUtils.sleep(5);
 
-        Assert.assertTrue(mainPage.EditCarIcon.isDisplayed());
+
+        Actions action = new Actions(Driver.getDriver());
+        action.moveToElement(mainPage.EditCarIcon).perform();
+        Assert.assertTrue(mainPage.ViewEditDeleteIcons.isDisplayed());
     }
 
 
