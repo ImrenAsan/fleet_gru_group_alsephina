@@ -11,6 +11,7 @@ Feature: learn how to use the pinbar.
     When the users logged in as "<userType>"
     And  the users click on the learn how to use space link
     Then user should see how to use Pinbar and use Pin Icon
+    And user should see use Pin Icon
 
 
 

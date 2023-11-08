@@ -11,6 +11,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -29,11 +30,12 @@ public class UserStory3_StepDefs {
     public void theUsersClickOnTheLearnHowToUseSpaceLink()
     {
 
-        BrowserUtils.sleep(10);
 
+        mainPage.wait.until(ExpectedConditions.elementToBeClickable(mainPage.learnHowToUseThisSpace));
+        BrowserUtils.sleep(3);
         mainPage.learnHowToUseThisSpace.click();
 
-        BrowserUtils.sleep(10);
+       // BrowserUtils.sleep(10);
 
 
     }
@@ -43,15 +45,20 @@ public class UserStory3_StepDefs {
     public void userShouldSeeHowToUsePinbarAndUsePinIcon() {
 
         Assert.assertTrue( mainPage.howToUsePinbar.isDisplayed());
+
+
+    }
+
+    @Then("user should see use Pin Icon")
+    public void user_should_see_use_pin_icon() {
+        mainPage.wait.until(ExpectedConditions.visibilityOf(mainPage.pinIcon));
         Assert.assertTrue(mainPage.pinIcon.isDisplayed());
-
-
-
     }
 
     @Then("user should see the image on the page.")
     public void userShouldSeeTheImageOnThePage() {
 
+        mainPage.wait.until(ExpectedConditions.visibilityOf(mainPage.pinbarImage));
         Assert.assertTrue( mainPage.pinbarImage.isDisplayed());
 
 
